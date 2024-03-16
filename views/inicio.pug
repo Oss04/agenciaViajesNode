@@ -1,0 +1,30 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janiero
+        em aventura
+
+block contenido 
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet non consequatur rerum cum sapiente pariatur ducimus obcaecati deleniti consectetur harum quia consequuntur perspiciatis at, explicabo nihil aspernatur quam blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore error vel perferendis facere esse, nisi architecto officiis alias. Optio repellendus molestias nesciunt et voluptas, dolorem minus ex sit nam.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus quia numquam deleniti dolorem impedit maiores, cupiditate voluptates at nisi reiciendis saepe aperiam voluptatem quae iure mollitia aut! Voluptatibus, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="nosotros", class="img-fluid")
+        include ./layout/bloque_viajes
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo de 2024 - 28 de Marzo de 2024
+                        p.precio $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales 
+        include ./layout/bloque_testimoniales
